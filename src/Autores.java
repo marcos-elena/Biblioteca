@@ -1,8 +1,8 @@
 public class Autores {
     private String nombre;
     private String apellidos;
-    private String fecha_nacimiento;
-    private String localidad_nacimiento;
+    private String fechaNacimiento;
+    private String localidadNacimiento;
 
     public String getNombre(){
         return nombre;
@@ -18,18 +18,18 @@ public class Autores {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-    public String getFecha_nacimiento(){
-        return fecha_nacimiento;
+    public String getFechaNacimiento(){
+        return fechaNacimiento;
     }
 
-    public void setFecha_nacimiento(String fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
-    public String getLocalidad_nacimiento(){
-        return localidad_nacimiento;
+    public String getLocalidadNacimiento(){
+        return localidadNacimiento;
     }
 
-    public void setLocalidad_nacimiento(String localidad_nacimiento) {
-        this.localidad_nacimiento = localidad_nacimiento;
+    public void setLocalidadNacimiento(String localidadNacimiento) {
+        this.localidadNacimiento = localidadNacimiento;
     }
 }

@@ -3,7 +3,7 @@ public class Libros {
     private String isbn;
     private String autor;
     private String genero;
-    private String fecha_publicacion;
+    private String fechaPublicacion;
 
     public String getTitulo(){
         return titulo;
@@ -33,11 +33,11 @@ public class Libros {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-    public String getFecha_publicacion(){
-        return fecha_publicacion;
+    public String getFechaPublicacion(){
+        return fechaPublicacion;
     }
 
-    public void setFecha_publicacion(String fecha_publicacion) {
-        this.fecha_publicacion = fecha_publicacion;
+    public void setFechaPublicacion(String fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
     }
 }
