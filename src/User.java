@@ -1,10 +1,20 @@
 public class User {
+
+    private Integer id;
     private String nombre;
     private String apellidos;
     private String dni;
     private String telefono;
     private String direccion;
     private String poblacion;
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getNombre(){
         return nombre;
