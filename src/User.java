@@ -8,7 +8,7 @@ public class User {
     private String direccion;
     private String poblacion;
 
-    public String getId(){
+    public Integer getId(){
         return id;
     }
 

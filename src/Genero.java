@@ -5,7 +5,7 @@ public class Genero {
     private String nombre;
     private String descripcion;
 
-    public String getId(){
+    public Integer getId(){
         return id;
     }
 

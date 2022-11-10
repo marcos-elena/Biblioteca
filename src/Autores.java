@@ -6,7 +6,7 @@ public class Autores {
     private String fechaNacimiento;
     private String localidadNacimiento;
 
-    public String getId(){
+    public Integer getId(){
         return id;
     }
 
