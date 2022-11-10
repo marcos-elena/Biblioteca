@@ -1,14 +1,39 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        String texto;
         //set libro
 
         Libros libro1= new Libros();
-        libro1.setTitulo("Libro1");
-        libro1.setIsbn("54915431645");
-        libro1.setAutor("Rubén");
-        libro1.setGenero("acción");
-        libro1.setFechaPublicacion("10/12/2004");
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Titulo");
+        texto = entrada.nextLine();
+        libro1.setTitulo(texto);
+
+        System.out.println("ISBN");
+        texto = entrada.nextLine();
+        libro1.setIsbn(texto);
+
+        System.out.println("Autor");
+        texto = entrada.nextLine();
+        libro1.setAutor(texto);
+
+        System.out.println("Genero");
+        texto = entrada.nextLine();
+        libro1.setGenero(texto);
+
+        System.out.println("Fecha Publicación");
+        texto = entrada.nextLine();
+        libro1.setFechaPublicacion(texto);
+
+        //Libros libro1= new Libros();
+        //libro1.setTitulo("Libro1");
+        //libro1.setIsbn("54915431645");
+        //libro1.setAutor("Rubén");
+        //libro1.setGenero("acción");
+        //libro1.setFechaPublicacion("10/12/2004");
 
         //imprime libro
 
@@ -20,7 +45,7 @@ public class Main {
 
         //set genero
 
-        Genero genero1= new Genero();
+        /*Genero genero1= new Genero();
         genero1.setId(1);
         genero1.setNombre("acción");
         genero1.setDescripcion("Descripción del género");
@@ -64,6 +89,7 @@ public class Main {
         System.out.println(usuario1.getDni());
         System.out.println(usuario1.getTelefono());
         System.out.println(usuario1.getPoblacion());
+         */
 
 
     }
