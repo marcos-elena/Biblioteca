@@ -1,4 +1,5 @@
 public class Prestamo {
+
         private Integer id;
         private User user;
         private Libros libro;
@@ -8,7 +9,6 @@ public class Prestamo {
         public Integer getId(){
                 return id;
         }
-
         public void setId(Integer id) {
                 this.id = id;
         }
@@ -16,7 +16,6 @@ public class Prestamo {
         public User getUser(){
                 return user;
         }
-
         public void setUser(User user) {
                 this.user = user;
         }
@@ -24,7 +23,6 @@ public class Prestamo {
         public Libros getLibro(){
                 return libro;
         }
-
         public void setLibro(Libros libro) {
                 this.libro = libro;
         }
@@ -32,7 +30,6 @@ public class Prestamo {
         public String getFechaPrestamo(){
                 return fechaPrestamo;
         }
-
         public void setFechaPrestamo(String fechaPrestamo) {
                 this.fechaPrestamo = fechaPrestamo;
         }
@@ -40,9 +37,7 @@ public class Prestamo {
         public String getFechaDevolucion(){
                 return fechaDevolucion;
         }
-
         public void setFechaDevolucion(String fechaDevolucion) {
                 this.fechaDevolucion = fechaDevolucion;
         }
-
 }

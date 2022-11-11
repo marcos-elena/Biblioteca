@@ -11,7 +11,6 @@ public class User {
     public Integer getId(){
         return id;
     }
-
     public void setId(Integer id) {
         this.id = id;
     }
@@ -19,7 +18,6 @@ public class User {
     public String getNombre(){
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -27,7 +25,6 @@ public class User {
     public String getApellidos(){
         return apellidos;
     }
-
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
@@ -35,7 +32,6 @@ public class User {
     public String getDni(){
         return dni;
     }
-
     public void setDni(String dni) {
         this.dni = dni;
     }
@@ -43,7 +39,6 @@ public class User {
     public String getTelefono(){
         return telefono;
     }
-
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
@@ -51,7 +46,6 @@ public class User {
     public String getDireccion(){
         return direccion;
     }
-
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
@@ -59,7 +53,6 @@ public class User {
     public String getPoblacion(){
         return poblacion;
     }
-
     public void setPoblacion(String poblacion) {
         this.poblacion = poblacion;
     }
