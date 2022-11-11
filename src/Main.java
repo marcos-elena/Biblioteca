@@ -52,11 +52,11 @@ public class Main {
         //Muestra los datos del libro
         System.out.println("----------------");
         System.out.println("DATOS DEL LIBRO:");
-        System.out.println(libro.getTitulo());
-        System.out.println(libro.getIsbn());
-        System.out.println(libro.getAutor());
-        System.out.println(libro.getGenero());
-        System.out.println(libro.getFechaPublicacion());
+        System.out.println("TÍTULO: " + libro.getTitulo());
+        System.out.println("ISBN: " + libro.getIsbn());
+        System.out.println("AUTOR: " + libro.getAutor());
+        System.out.println("GÉNERO: " + libro.getGenero());
+        System.out.println("PUBLICADO: " + libro.getFechaPublicacion());
         System.out.println("----------------");
 
         //set user
