@@ -1,8 +1,8 @@
 public class Libros {
     private String titulo;
     private String isbn;
-    private String autor;
-    private String genero;
+    private Autores autor;
+    private Genero genero;
     private String fechaPublicacion;
 
     public String getTitulo(){
@@ -19,18 +19,18 @@ public class Libros {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-    public String getAutor(){
+    public Autores getAutor(){
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Autores autor) {
         this.autor = autor;
     }
-    public String getGenero(){
+    public Genero getGenero(){
         return genero;
     }
 
-    public void setGenero(String genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
     public String getFechaPublicacion(){
@@ -39,5 +39,11 @@ public class Libros {
 
     public void setFechaPublicacion(String fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
+    }
+
+    public void setAutor(String next) {
+    }
+
+    public void setGenero(String next) {
     }
 }

@@ -1,18 +1,9 @@
 public class Autores {
 
-    private Integer id;
     private String nombre;
     private String apellidos;
     private String fechaNacimiento;
     private String localidadNacimiento;
-
-    public Integer getId(){
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getNombre(){
         return nombre;

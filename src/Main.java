@@ -2,74 +2,62 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        String texto;
-        //set libro
-
-        Libros libro1= new Libros();
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.println("Titulo");
-        texto = entrada.nextLine();
-        libro1.setTitulo(texto);
-
-        System.out.println("ISBN");
-        texto = entrada.nextLine();
-        libro1.setIsbn(texto);
-
-        System.out.println("Autor");
-        texto = entrada.nextLine();
-        libro1.setAutor(texto);
-
-        System.out.println("Genero");
-        texto = entrada.nextLine();
-        libro1.setGenero(texto);
-
-        System.out.println("Fecha Publicación");
-        texto = entrada.nextLine();
-        libro1.setFechaPublicacion(texto);
-
-        //Libros libro1= new Libros();
-        //libro1.setTitulo("Libro1");
-        //libro1.setIsbn("54915431645");
-        //libro1.setAutor("Rubén");
-        //libro1.setGenero("acción");
-        //libro1.setFechaPublicacion("10/12/2004");
-
-        //imprime libro
-
-        System.out.println(libro1.getTitulo());
-        System.out.println(libro1.getIsbn());
-        System.out.println(libro1.getAutor());
-        System.out.println(libro1.getGenero());
-        System.out.println(libro1.getFechaPublicacion());
-
         //set genero
 
-        /*Genero genero1= new Genero();
-        genero1.setId(1);
-        genero1.setNombre("acción");
-        genero1.setDescripcion("Descripción del género");
+        Genero genero = new Genero();
+        genero.setId(1);
+        genero.setNombre("acción");
+        genero.setDescripcion("Descripción del género");
 
         //imprime genero
-
-        System.out.println(genero1.getId());
-        System.out.println(genero1.getNombre());
-        System.out.println(genero1.getDescripcion());
+        /*System.out.println(genero.getId());
+        System.out.println(genero.getNombre());
+        System.out.println(genero.getDescripcion());*/
 
         //set autor
 
-        Autores ruben= new Autores();
-        ruben.setNombre("Rubén");
-        ruben.setApellidos("Sanchez");
-        ruben.setFechaNacimiento("01/01/2001");
-        ruben.setLocalidadNacimiento("España");
+        Autores autor = new Autores();
+        autor.setNombre("Rubén");
+        autor.setApellidos("Sanchez");
+        autor.setFechaNacimiento("01/01/2001");
+        autor.setLocalidadNacimiento("España");
 
         //imprime autor
+        /*System.out.println(autor.getNombre());
+        System.out.println(autor.getApellidos());
+        System.out.println(autor.getFechaNacimiento());
+        System.out.println(autor.getLocalidadNacimiento());*/
 
-        System.out.println(ruben.getNombre());
-        System.out.println(ruben.getApellidos());
-        System.out.println(ruben.getFechaNacimiento());
-        System.out.println(ruben.getLocalidadNacimiento());
+        //set libro
+
+        System.out.println("Rellena los datos del libro...");
+
+        Libros libro= new Libros();
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Titulo:");
+        libro.setTitulo(entrada.next());
+
+        System.out.println("ISBN:");
+        libro.setIsbn(entrada.next());
+
+        System.out.println("Fecha Publicación");
+        libro.setFechaPublicacion(entrada.next());
+
+        //Establece el autor del libro
+        libro.setAutor(autor);
+        //Establece el género del libro
+        libro.setGenero(genero);
+
+        //Muestra los datos del libro
+        System.out.println("----------------");
+        System.out.println("DATOS DEL LIBRO:");
+        System.out.println(libro.getTitulo());
+        System.out.println(libro.getIsbn());
+        System.out.println(libro.getAutor());
+        System.out.println(libro.getGenero());
+        System.out.println(libro.getFechaPublicacion());
+        System.out.println("----------------");
 
         //set user
 
@@ -82,15 +70,37 @@ public class Main {
         usuario1.setPoblacion("Ávila");
 
         //imprime user
-
-        System.out.println(usuario1.getNombre());
+        /*System.out.println(usuario1.getNombre());
         System.out.println(usuario1.getApellidos());
         System.out.println(usuario1.getDireccion());
         System.out.println(usuario1.getDni());
         System.out.println(usuario1.getTelefono());
-        System.out.println(usuario1.getPoblacion());
-         */
+        System.out.println(usuario1.getPoblacion());*/
 
+        //set prestamo
+
+        System.out.println("Rellena los datos del prestamo...");
+
+        Prestamo prestamo = new Prestamo();
+        prestamo.setId(1);
+        prestamo.setLibro(libro);
+        prestamo.setUser(usuario1);
+
+        System.out.println("Fecha prestamo:");
+        prestamo.setFechaPrestamo(entrada.next());
+
+        System.out.println("Fecha devolución:");
+        prestamo.setFechaDevolucion(entrada.next());
+
+        //muestra los datos del prestamo
+        System.out.println("-------------------");
+        System.out.println("DATOS DEL PRESTAMO:");
+        System.out.println("ID: " + prestamo.getId());
+        System.out.println("LIBRO: " + prestamo.getLibro());
+        System.out.println("USUARIO: " + prestamo.getUser());
+        System.out.println("PRESTADO: " + prestamo.getFechaPrestamo());
+        System.out.println("DEVOLUCION: " + prestamo.getFechaDevolucion());
+        System.out.println("-------------------");
 
     }
 }
